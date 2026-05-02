@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#5783A4" />
+  <title>Курсы — Langley Education</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <meta name="description" content="Пять направлений Langley Education: IELTS, TOEFL, General English (A1–C1), турецкий, корейский. Программы, форматы, целевые баллы.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://langley-medina.vercel.app/courses.html">
+  <meta property="og:title" content="Курсы Langley — IELTS, TOEFL, English, Türkçe, 한국어">
+  <meta property="og:description" content="Пять направлений с подробными программами и форматами обучения.">
+  <meta property="og:image" content="https://langley-medina.vercel.app/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Курсы Langley — IELTS, TOEFL, English, Türkçe, 한국어">
+  <meta name="twitter:description" content="Пять направлений с подробными программами и форматами обучения.">
+  <meta name="twitter:image" content="https://langley-medina.vercel.app/og.png">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%235783A4'/%3E%3Cpath d='M14 18h22a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-9l-7 6v-6h-6a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z' fill='white'/%3E%3Cpath d='M21 24v8M17 28h8' stroke='%235783A4' stroke-width='2.6' stroke-linecap='round'/%3E%3Cpath d='M30 30h22a4 4 0 0 1 4 4v12a4 4 0 0 1 4-4v6l-7-6h-9a4 4 0 0 1-4-4V34a4 4 0 0 1 4-4z' fill='white'/%3E%3Cpath d='m41 36 1.7 4.6 4.8.3-3.7 3 1.2 4.6L41 46l-4 2.5 1.2-4.6-3.7-3 4.8-.3z' fill='%235783A4'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Главная навигация">
+  <a class="nav__logo" href="index.html" aria-label="Langley Education — на главную">
+    <svg class="nav__logo-mark" viewBox="0 0 64 56" aria-hidden="true">
+      <path d="M4 8h22a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-9l-7 6v-6H4a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z" transform="translate(2 0)" fill="currentColor"/>
+      <path d="M11 14v8M7 18h8" stroke="#5783A4" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M22 22h22a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-6v6l-7-6h-9a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z" transform="translate(2 0)" fill="currentColor"/>
+      <path d="m35 30 1.7 4.6 4.8.3-3.7 3 1.2 4.6L35 40l-4 2.5 1.2-4.6-3.7-3 4.8-.3z" fill="#5783A4"/>
+    </svg>
+    <span class="nav__logo-word">langley</span>
+  </a>
+  <ul class="nav__links" id="nav-links">
+    <li><a href="courses.html" aria-current="page">Курсы</a></li>
+    <li><a href="program.html">Программа</a></li>
+    <li><a href="results.html">Результаты</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+  <a href="contacts.html#trial" class="nav__cta">Пробный урок</a>
+  <button class="nav__burger" id="nav-burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-panel">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-panel" id="nav-panel" aria-hidden="true">
+  <ul>
+    <li><a href="courses.html">Курсы</a></li>
+    <li><a href="program.html">Программа</a></li>
+    <li><a href="results.html">Результаты</a></li>
+    <li><a href="contacts.html">Контакты</a></li>
+  </ul>
+  <a href="contacts.html#trial" class="nav-panel__cta">Записаться на пробный урок →</a>
+</div>
+
+<main>
+
+<header class="page-head">
+  <span class="page-head__chapter" aria-hidden="true">2</span>
+  <div class="page-head__inner">
+    <nav class="page-head__crumb" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a>
+      <span aria-hidden="true">→</span>
+      <span>Курсы</span>
+    </nav>
+    <h1 class="page-head__title">Курсы <em>с пользой</em></h1>
+    <p class="page-head__sub">
+      Пять направлений. Каждое — со своей программой, тестированием на входе и трекингом прогресса. Подбираем формат и интенсивность под твою цель.
+    </p>
+  </div>
+</header>
+
+<section class="section section--white">
+  <div class="section__inner">
+
+    <article class="course reveal" id="ielts">
+      <div class="course__lead">
+        <div class="course__flag">🇬🇧</div>
+        <span class="course__tag">Флагман · Academic & General</span>
+        <h3>IELTS</h3>
+        <p class="course__lede">
+          Готовим как тренируют олимпийцев: <b>план тренировок</b>, ежемесячная диагностика, разбор ошибок по Speaking, Writing, Reading, Listening. Курс лично от Айши — 2 месяца в группе и 1 месяц индивидуально.
+        </p>
+        <a href="contacts.html#trial" class="course__cta">Записаться на пробный урок →</a>
+      </div>
+      <div class="course__detail">
+        <dl class="course__meta">
+          <div><dt>Срок</dt><dd>3 месяца</dd></div>
+          <div><dt>Целевой балл</dt><dd>6.5 — 8.0</dd></div>
+          <div><dt>Формат</dt><dd>Группа / индивид.</dd></div>
+        </dl>
+        <div class="course__block">
+          <h4>Что внутри</h4>
+          <ul>
+            <li><b>Speaking</b> — отработка по реальным IELTS-сценариям, тренировка под камеру</li>
+            <li><b>Writing</b> — Task 1 и Task 2, работа с критериями оценки и типичными ошибками</li>
+            <li><b>Reading</b> — тайминг, скиммирование, академические тексты</li>
+            <li><b>Listening</b> — все четыре секции, работа с акцентами</li>
+            <li>Mock-экзамены каждый месяц с разбором</li>
+          </ul>
+        </div>
+        <div class="course__block">
+          <h4>Кому подойдёт</h4>
+          <ul>
+            <li>Тем, кто поступает в магистратуру или бакалавриат за рубеж</li>
+            <li>Тем, кто оформляет рабочую визу или иммиграцию (Канада, UK, Австралия)</li>
+            <li>Уровень от <b>pre-intermediate</b> и выше — если ниже, начинаем с General English</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="course reveal" id="toefl">
+      <div class="course__lead">
+        <div class="course__flag">🇺🇸</div>
+        <span class="course__tag">USA · iBT</span>
+        <h3>TOEFL iBT</h3>
+        <p class="course__lede">
+          Подготовка под американские университеты. Speaking и Writing на компьютере — как на реальном экзамене, без иллюзий. Учим работать с интегрированными заданиями и таймингом.
+        </p>
+        <a href="contacts.html#trial" class="course__cta">Записаться →</a>
+      </div>
+      <div class="course__detail">
+        <dl class="course__meta">
+          <div><dt>Срок</dt><dd>3 — 4 мес.</dd></div>
+          <div><dt>Целевой балл</dt><dd>90 — 110</dd></div>
+          <div><dt>Формат</dt><dd>Группа / индивид.</dd></div>
+        </dl>
+        <div class="course__block">
+          <h4>Что внутри</h4>
+          <ul>
+            <li><b>Reading & Listening</b> — академические лекции, конспектирование</li>
+            <li><b>Speaking</b> — независимые и интегрированные задачи под таймер</li>
+            <li><b>Writing</b> — Independent + Integrated essay</li>
+            <li>Полные пробные сдачи в формате iBT</li>
+          </ul>
+        </div>
+        <div class="course__block">
+          <h4>Кому подойдёт</h4>
+          <ul>
+            <li>Тем, кто поступает в США (бакалавриат / магистратура / PhD)</li>
+            <li>Уровень <b>upper-intermediate</b> и выше</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="course reveal" id="english">
+      <div class="course__lead">
+        <div class="course__flag">🇬🇧</div>
+        <span class="course__tag">A1 → C1</span>
+        <h3>General English</h3>
+        <p class="course__lede">
+          Английский с нуля или с любого уровня — от <b>pre-intermediate</b> до уверенного C1. Без зубрёжки, через ощущения и привыкание. База → автоматизм.
+        </p>
+        <a href="contacts.html#trial" class="course__cta">Записаться →</a>
+      </div>
+      <div class="course__detail">
+        <dl class="course__meta">
+          <div><dt>Срок</dt><dd>от 4 мес.</dd></div>
+          <div><dt>Уровни</dt><dd>A1 → C1</dd></div>
+          <div><dt>Формат</dt><dd>Группа / индивид.</dd></div>
+        </dl>
+        <div class="course__block">
+          <h4>Что внутри</h4>
+          <ul>
+            <li>Грамматика по уровню — без скучных правил, только в живом контексте</li>
+            <li>Лексика тематическими блоками — путешествия, работа, эмоции, технологии</li>
+            <li>Speaking-клуб раз в неделю — практика с разными собеседниками</li>
+            <li>Привыкание к формату — фильмы, подкасты, статьи</li>
+          </ul>
+        </div>
+        <div class="course__block">
+          <h4>Кому подойдёт</h4>
+          <ul>
+            <li>Тем, кто учит "для жизни" — общение, работа, контент</li>
+            <li>Тем, кому нужно подтянуть базу перед IELTS / TOEFL</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="course reveal" id="turkish">
+      <div class="course__lead">
+        <div class="course__flag">🇹🇷</div>
+        <span class="course__tag">Türkiye</span>
+        <h3>Türkçe</h3>
+        <p class="course__lede">
+          Турецкий для жизни, учёбы и работы в Турции. Преподаватели с филологическим бэкграундом и опытом жизни в Стамбуле и Анкаре.
+        </p>
+        <a href="contacts.html#trial" class="course__cta">Записаться →</a>
+      </div>
+      <div class="course__detail">
+        <dl class="course__meta">
+          <div><dt>Срок</dt><dd>от 4 мес.</dd></div>
+          <div><dt>Уровни</dt><dd>A1 → B2</dd></div>
+          <div><dt>Формат</dt><dd>Группа / индивид.</dd></div>
+        </dl>
+        <div class="course__block">
+          <h4>Что внутри</h4>
+          <ul>
+            <li>Турецкий алфавит и фонетика — ставим произношение с первого занятия</li>
+            <li>Грамматика — агглютинация, времена, падежи в живых ситуациях</li>
+            <li>Разговорная практика — рынок, ресторан, документы, аренда жилья</li>
+            <li>Подготовка к TÖMER, если нужен сертификат для университета</li>
+          </ul>
+        </div>
+        <div class="course__block">
+          <h4>Кому подойдёт</h4>
+          <ul>
+            <li>Тем, кто переезжает в Турцию или часто там бывает</li>
+            <li>Тем, кто планирует обучение в турецком вузе</li>
+            <li>Тем, кто работает с турецкими партнёрами</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="course reveal" id="korean">
+      <div class="course__lead">
+        <div class="course__flag">🇰🇷</div>
+        <span class="course__tag">한국</span>
+        <h3>한국어 — Корейский</h3>
+        <p class="course__lede">
+          От алфавита хангыль до подготовки к TOPIK. Программы под учёбу, K-pop индустрию и переезд в Сеул. Без перевода через английский — учим напрямую.
+        </p>
+        <a href="contacts.html#trial" class="course__cta">Записаться →</a>
+      </div>
+      <div class="course__detail">
+        <dl class="course__meta">
+          <div><dt>Срок</dt><dd>от 4 мес.</dd></div>
+          <div><dt>Уровни</dt><dd>TOPIK I → II</dd></div>
+          <div><dt>Формат</dt><dd>Группа / индивид.</dd></div>
+        </dl>
+        <div class="course__block">
+          <h4>Что внутри</h4>
+          <ul>
+            <li>Хангыль — читаешь и пишешь уверенно за две недели</li>
+            <li>Уровни вежливости — критично для общения в Корее</li>
+            <li>Иероглифы 한자 в объёме TOPIK</li>
+            <li>Аудирование на материале K-drama и интервью</li>
+          </ul>
+        </div>
+        <div class="course__block">
+          <h4>Кому подойдёт</h4>
+          <ul>
+            <li>Тем, кто планирует учёбу в Корее (TOPIK сертификат)</li>
+            <li>Тем, кто работает с корейскими компаниями</li>
+            <li>Фанатам K-pop / K-drama, которым "хочется без субтитров"</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner__inner">
+    <div>
+      <h2>Не уверен(а), какое направление <em>твоё</em>?</h2>
+      <p>На пробном уроке тестируем уровень и подбираем программу под твою цель и сроки. Без обязательств.</p>
+    </div>
+    <a href="contacts.html#trial" class="btn btn--primary">Записаться на пробный урок</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <svg class="footer__logo" viewBox="0 0 64 56" aria-hidden="true">
+        <path d="M4 8h22a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-9l-7 6v-6H4a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z" transform="translate(2 0)" fill="white"/>
+        <path d="M11 14v8M7 18h8" stroke="#5783A4" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M22 22h22a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-6v6l-7-6h-9a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z" transform="translate(2 0)" fill="white"/>
+        <path d="m35 30 1.7 4.6 4.8.3-3.7 3 1.2 4.6L35 40l-4 2.5 1.2-4.6-3.7-3 4.8-.3z" fill="#5783A4"/>
+      </svg>
+      <p>Langley Education — образовательная компания из Казахстана. С 2013 года готовим к IELTS, TOEFL и обучаем английскому, турецкому, корейскому.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Сайт</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="courses.html">Курсы</a></li>
+        <li><a href="program.html">Программа</a></li>
+        <li><a href="results.html">Результаты</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Связь</h4>
+      <ul>
+        <!-- PLACEHOLDER: replace with the brand's real Instagram handle once confirmed -->
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.instagram.com/ielts.done" target="_blank" rel="noopener">@ielts.done — разборы</a></li>
+        <li><a href="https://www.instagram.com/aisha_tokazhanova" target="_blank" rel="noopener">@aisha_tokazhanova</a></li>
+        <li><a href="contacts.html#trial">Пробный урок</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>По вопросам сайта</h4>
+      <ul>
+        <li><a href="mailto:medinakasen@gmail.com">medinakasen@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Langley Education</span>
+    <span>Almaty · Kazakhstan</span>
+  </div>
+</footer>
+
+<a href="contacts.html#trial" class="wa-float" aria-label="Записаться на пробный урок">
+  <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+    <path fill="currentColor" d="M20.5 3.5A11 11 0 0 0 3.6 17.7L2 22l4.4-1.5a11 11 0 0 0 16.1-9.6 11 11 0 0 0-2-7.4Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.6.9.9-2.5-.2-.3a9 9 0 1 1 6.8 3.4Zm5-6.8c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1a7.4 7.4 0 0 1-3.6-3.2c-.3-.5.3-.5.8-1.5l-.1-.4-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 1.8.7 2.5.8 3.4.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z"/>
+  </svg>
+  <span>Пробный урок</span>
+</a>
+
+<script src="main.js" defer></script>
+</body>
+</html>
