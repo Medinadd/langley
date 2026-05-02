@@ -10,6 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script>
+    window.__CMS_SITE = {
+      slug: 'langley',
+      supabase: {
+        url: 'https://rcjwtfqlogojcqwjodop.supabase.co',
+        anon: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJjand0ZnFsb2dvamNxd2pvZG9wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzczOTMyOTksImV4cCI6MjA5Mjk2OTI5OX0.qm3SGS0RvudiKUe4aa2I0FLhrck8d86u6x0-8_8kHFw'
+      }
+    };
+  </script>
+  <script src="hydrate.js" defer></script>
 
   <meta name="description" content="Langley Education — готовим к IELTS и TOEFL так, как тренируют олимпийцев. 12 лет, 30 000+ выпускников. Программа от базы до автоматизма за 3 месяца.">
   <meta property="og:type" content="website">
@@ -35,7 +45,7 @@
       <path d="M22 22h22a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4h-6v6l-7-6h-9a4 4 0 0 1-4-4V26a4 4 0 0 1 4-4z" transform="translate(2 0)" fill="currentColor"/>
       <path d="m35 30 1.7 4.6 4.8.3-3.7 3 1.2 4.6L35 40l-4 2.5 1.2-4.6-3.7-3 4.8-.3z" fill="#5783A4"/>
     </svg>
-    <span class="nav__logo-word">langley</span>
+    <span class="nav__logo-word" data-cms="brand.name">langley</span>
   </a>
   <ul class="nav__links" id="nav-links">
     <li><a href="courses.html">Курсы</a></li>
@@ -66,10 +76,10 @@
   <div class="hero__container">
     <div class="hero__content">
       <span class="badge">с 2013 · ребрендинг 2023</span>
-      <h1 class="hero__title">
+      <h1 class="hero__title" data-cms="hero.title_html" data-cms-html>
         Твой <em>лучший</em><br/>языковой репетитор
       </h1>
-      <p class="hero__sub">
+      <p class="hero__sub" data-cms="hero.sub_html" data-cms-html>
         Готовим к <b>IELTS</b> так, как тренируют олимпийцев — четкий план тренировок, который приведёт тебя к <b>целевому баллу за 3 месяца</b>.
       </p>
       <div class="hero__cta">
@@ -312,8 +322,7 @@
     <div class="footer__col">
       <h4>Связь</h4>
       <ul>
-        <!-- PLACEHOLDER: replace with the brand's real Instagram handle once confirmed -->
-        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" data-cms="contacts.instagram" data-cms-attr="href" data-cms-prefix="https://www.instagram.com/">Instagram</a></li>
         <li><a href="https://www.instagram.com/ielts.done" target="_blank" rel="noopener">@ielts.done — разборы</a></li>
         <li><a href="https://www.instagram.com/aisha_tokazhanova" target="_blank" rel="noopener">@aisha_tokazhanova</a></li>
         <li><a href="contacts.html#trial">Пробный урок</a></li>
